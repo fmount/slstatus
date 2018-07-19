@@ -61,5 +61,18 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ datetime, "%s",           "%F %T" },
+    //{ vol_perc, "| v: %s | ", "default" },
+    //{ disk_perc, "[ /: %s ]", "/" },
+    { alsa_get_vol, "[VOL: %d dB]", "default" },
+    { cpu_perc, "[CPU: %s]" },
+    { ram_perc, " [RAM: %s]" },
+    { ipv4, " [E: %s]", "eth0" },
+    { ipv4, " [W: %s]", "wlan0" },
+    { ipv4, " [VPN: %s]", "vpn" },
+
+    /* TODO: Check for VPN ..
+     * { ipv4, "| W: %s", "wlan0" },
+     */
+	{ battery_perc, " [BAT: %s]", "BAT0" },
+	{ datetime, " [%s]", "%F %r" },
 };

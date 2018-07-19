@@ -1,5 +1,8 @@
 slstatus - suckless status
 ==========================
+This is a mirror of suckless slstatus project with some components developed to work
+on my systems.
+
 slstatus is a suckless status monitor for window managers that use WM_NAME
 (e.g. dwm) or stdin to fill the status bar.
 
@@ -29,6 +32,9 @@ Features
 - Volume percentage (OSS/ALSA)
 - WiFi signal percentage and ESSID
 
+New Components
+-----
+- Volume retrieved using alsalib to initialize the mixer handler
 
 Requirements
 ------------
