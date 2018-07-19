@@ -35,6 +35,7 @@ Features
 New Components
 -----
 - Volume retrieved using alsalib to initialize the mixer handler
+  To make this component works we need to recompile using -lm and -lasound libs.
 
 Requirements
 ------------
